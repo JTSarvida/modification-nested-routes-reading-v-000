@@ -3947,3 +3947,14 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 72ms (Views: 70.4ms | ActiveRecord: 0.0ms)
 
 
+Started POST "/posts" for 96.255.67.85 at 2020-05-21 18:51:34 +0000
+Cannot render console from 96.255.67.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hzWvYcP7CTZgpRpIL/ZYOeuaf60WG0hIzbnLXKZHNO8fLehTo5OCyCRtIE0qmyl+rjp/nGk5fN97krcB2sTy2w==", "post"=>{"author_id"=>"7", "title"=>"Blah Blah", "description"=>"blah blah blah"}, "commit"=>"Create Post"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at", "author_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Blah Blah"], ["description", "blah blah blah"], ["created_at", "2020-05-21 18:51:34.646412"], ["updated_at", "2020-05-21 18:51:34.646412"], ["author_id", 7]]
+  [1m[35m (69.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://67.205.165.109:45315/posts/20
+Completed 302 Found in 79ms (ActiveRecord: 70.1ms)
+
+
