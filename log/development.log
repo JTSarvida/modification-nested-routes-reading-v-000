@@ -3932,3 +3932,8 @@ Processing by AuthorsController#show as HTML
   Parameters: {"id"=>"7"}
   [1m[36mAuthor Load (0.7ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
   Rendering authors/show.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = ?[0m  [["author_id", 7]]
+  Rendered authors/show.html.erb within layouts/application (42.5ms)
+Completed 200 OK in 87ms (Views: 79.1ms | ActiveRecord: 1.8ms)
+
+
