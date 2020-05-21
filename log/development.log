@@ -3937,3 +3937,13 @@ Processing by AuthorsController#show as HTML
 Completed 200 OK in 87ms (Views: 79.1ms | ActiveRecord: 1.8ms)
 
 
+Started GET "/authors/7/posts/new" for 96.255.67.85 at 2020-05-21 18:49:59 +0000
+Cannot render console from 96.255.67.85! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Parameters: {"author_id"=>"7"}
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (33.1ms)
+  Rendered posts/new.html.erb within layouts/application (34.7ms)
+Completed 200 OK in 72ms (Views: 70.4ms | ActiveRecord: 0.0ms)
+
+
